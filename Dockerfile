@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/rhel7/rhel
+FROM centos:7
 # Add Web server, Apache Benchmark, update image, and clear cache
 RUN yum -y install httpd httpd-tools && yum -y update; yum clean all
 # Add some data to web server
